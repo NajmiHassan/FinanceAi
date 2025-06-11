@@ -1,38 +1,106 @@
-# Finance Learning Assistant
+# Finance AI
 
-An AI-powered assistant designed to help users learn about personal finance, investment, budgeting, and financial literacy. The assistant provides personalized lessons, quizzes, and financial tips tailored to the user's progress and interests.
+An intelligent personal finance assistant powered by AI that helps you learn about money management, create budgets, and visualize your finances.
 
-## Key Features
+## Features
 
-- **Personalized Learning Path:** Customizes content based on the user’s existing knowledge and learning goals.
-- **Interactive Lessons:** Offers bite-sized lessons on various finance topics, including budgeting, investing, savings, and credit management.
-- **Quizzes and Progress Tracking:** Reinforces learning through quizzes and tracks progress over time.
-- **Daily Financial Tips:** Provides daily tips and advice to help users improve their financial habits.
-- **Q&A Feature:** Allows users to ask finance-related questions and receive instant answers from the AI.
+### 📊 Monthly Budget Planner
+- Interactive AI chatbot to help create your monthly budget
+- Get personalized financial advice and recommendations
+- Track your budgeting progress with conversational guidance
 
-## Implementation Steps
+### 🎓 Personal Finance Tutor
+- Ask any finance-related questions and get detailed explanations
 
-1. **User Registration and Profile Setup:** Collect basic information to personalize the learning experience.
-2. **Content Creation:** Develop interactive lessons and quizzes on key finance topics.
-3. **Lesson Delivery:** Use LLaMA 3 to deliver lessons in an engaging and easy-to-understand manner.
-4. **Quiz Functionality:** Implement adaptive quizzes that provide feedback based on user performance.
-5. **Tips and Advice:** Create a database of financial tips and integrate a daily tip feature.
-6. **Q&A Module:** Use LLaMA 3 to answer user queries in real-time.
+### 🧠 Test Your Knowledge
+- Take interactive quizzes on personal finance topics
+- Get instant feedback on your answers
+- Learn from mistakes with AI-powered explanations
 
-## Technologies
+### 📈 Visualize Your Finances
+- Input your monthly income and expenses
+- Generate beautiful charts (pie charts and bar graphs)
+- See your spending breakdown at a glance
+- Get warnings if you're overspending
 
-- **LLaMA 3:** For natural language processing and content delivery.
-- **Database:** Firebase or MongoDB for storing user data, lessons, and quiz results.
-- **Frontend Framework:** React or Angular for building the user interface.
-- **Backend Framework:** Node.js or Flask for handling user requests and data management.
+## 🚀 Getting Started
 
-## Prototype Example
+### Prerequisites
+- Python 3.7 or higher
+- Together AI API key (get one at [together.ai](https://together.ai))
 
-- **Welcome Screen:** Introduction and user setup.
-- **Dashboard:** Overview of user progress, upcoming lessons, and recent quizzes.
-- **Lesson Interface:** Interactive lessons with text, videos, and infographics.
-- **Quiz Interface:** Multiple-choice questions with instant feedback.
-- **Daily Tip:** Displays a financial tip each day.
-- **Q&A Chat:** A chat interface for asking finance-related questions.
+### Installation
 
-This project can help users of all ages improve their financial literacy in an interactive and engaging way, making it a great choice for a hackathon.
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/NajmiHassan/Finanace-Buddy.git
+   cd finance-ai
+   ```
+
+2. **Install required packages**
+   ```bash
+   pip install streamlit together pandas matplotlib
+   ```
+
+3. **Set up your API key**
+   
+   **Option 1: Environment Variable (Recommended)**
+   ```bash
+   export TOGETHER_API_KEY="your-api-key-here"
+   ```
+   
+   **Option 2: Enter in App**
+   - Run the app and enter your API key when prompted
+
+4. **Run the application**
+   ```bash
+   streamlit run app.py
+   ```
+
+5. **Open your browser**
+   - The app will automatically open at `http://localhost:8501`
+
+## 🎯 How to Use
+
+1. **Choose a feature** from the sidebar:
+   - Monthly Budget Planner
+   - Personal Finance Tutor
+   - Test Your Knowledge
+   - Visualize Your Finances
+
+2. **Interact with the AI** through the chat interface for learning and budgeting
+
+3. **Input your financial data** in the visualization tool to see your spending patterns
+
+4. **Take quizzes** to test and improve your financial knowledge
+
+## 🛠️ Built With
+
+- **[Streamlit](https://streamlit.io/)** - Web app framework
+- **[Together AI](https://together.ai/)** - AI API service
+- **[LLaMA 3](https://llama.meta.com/)** - Meta's language model
+- **[Matplotlib](https://matplotlib.org/)** - Data visualization
+- **[Pandas](https://pandas.pydata.org/)** - Data manipulation
+
+## 💡 Tips for Best Results
+
+- Be specific when asking questions to the AI tutor
+- Enter realistic budget numbers for accurate visualizations
+- Take multiple quizzes to reinforce your learning
+- Use the budget planner regularly to track your progress
+
+## 🔧 Troubleshooting
+
+**API Key Issues:**
+- Make sure your Together AI API key is valid
+- Check that the environment variable is set correctly
+
+**Chart Not Displaying:**
+- Ensure you've entered valid income and expense amounts
+- Make sure expense categories have names and amounts > 0
+
+**App Not Loading:**
+- Check that all required packages are installed
+- Verify you're using Python 3.7+
+
+---
